@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Arsenal:400,400i,700,700i|Lato:400,400i,700,900');
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+h1 {
+	font-family: 'Arsenal';
+	font-size: 12pt;
+}
+
+h2 {
+	font-size: 9pt;
+}
+
+p {
+	margin: 0;
+	margin-bottom: .1in;
+}
+
+label {
+	font-weight: 700;
+}
+
+
+.spellcard {
+	width: 2.5in;
+	/*height: 3.5in;*/
+
+	padding: .25in;
+	margin: .2in;
+
+	background-color: #eee;
+	border-radius: .25in;
+
+	font-family: 'Lato';
+}
+
+.spellcard__top {
+	position: relative;
+}
+
+.top__level-bubble {
+	border-radius: 100%;
+	background-color: #bbb;
+	width: .4in;
+	height: .4in;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	right: 0;
+	line-height: .4in;
+}
+
+.spellcard__body {
+	font-size: 10pt;
+	margin-top: .15in;
+}
+
+.spellcard__meta {
+	font-size: 9pt;
+}
+
+.spellcard__bottom {
+	font-size: 8pt;
+}
