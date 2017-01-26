@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Arsenal:400,400i,700,700i|Lato:400,400i,700,900');
 
+
 h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 }
 
 h1 {
 	font-family: 'Arsenal';
-	font-size: 12pt;
+	font-size: 11pt;
+	margin-bottom: .025in;
 }
 
 h2 {
-	font-size: 9pt;
+	font-size: 8pt;
 }
 
 p {
@@ -24,43 +26,56 @@ label {
 
 
 .spellcard {
-	width: 2.5in;
-	/*height: 3.5in;*/
+	position: relative;
+	width: 2.25in;
 
-	padding: .25in;
-	margin: .2in;
+	height: 3.5in;
+	overflow: hidden;
+
+	margin: .25in;
 
 	background-color: #eee;
-	border-radius: .25in;
+	border-radius: .125in;
+	border-width: 0;
 
 	font-family: 'Lato';
 }
 
 .spellcard__top {
 	position: relative;
-}
-
-.top__level-bubble {
-	border-radius: 100%;
-	background-color: #bbb;
-	width: .4in;
-	height: .4in;
-	position: absolute;
-	text-align: center;
-	top: 0;
-	right: 0;
-	line-height: .4in;
+	padding: .125in .15in .1in;
+	margin-bottom: .1in;
+	background-color: #ccc;
 }
 
 .spellcard__body {
-	font-size: 10pt;
-	margin-top: .15in;
+	font-size: 9pt;
+	padding: 0 .15in;
+	position: relative;
 }
 
 .spellcard__meta {
-	font-size: 9pt;
+	font-size: 8pt;
+}
+
+.spellcard__description {
+	margin: .1in 0;
 }
 
 .spellcard__bottom {
-	font-size: 8pt;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: .075in .15in .1in;
+	width: calc(100% - .3in);
+
+	background-color: #ddd;
+
+	font-size: 6pt;
+}
+.spellcard:not(.truncated) .spellcard__count {
+	display: none;
+}
+.spellcard__count {
+	float: right;
 }
