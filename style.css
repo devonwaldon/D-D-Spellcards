@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Arsenal:400,400i,700,700i|Lato:400,400i,700,900');
+/*@import url('https://fonts.googleapis.com/css?family=Arsenal:400,400i,700,700i|Lato:400,400i,700,900');
 
 
 h1, h2, h3, h4, h5, h6 {
@@ -27,9 +27,9 @@ label {
 
 .spellcard {
 	position: relative;
-	width: 2.25in;
-
+	width: 2.5in;
 	height: 3.5in;
+
 	overflow: hidden;
 
 	margin: .25in;
@@ -78,4 +78,4 @@ label {
 }
 .spellcard__count {
 	float: right;
-}
+}*/

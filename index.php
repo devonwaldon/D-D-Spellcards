@@ -1,31 +1,43 @@
 <?php
 
+$selected_spell = false;
+if (array_key_exists('spell', $_GET)) {
+	$selected_spell = $_GET['spell'];
+}
 
 ?>
 <html>
-<head>
-<link type="text/css" rel="stylesheet" href="style.css">
-</head>
-
 
 <!-- <h1>Spellcards</h1> -->
 
 <?php
 // Spell JSON modified from https://raw.githubusercontent.com/jcquinlan/dnd-spells/master/spells.json
 $spell_json = file_get_contents('spelldata.json');
-$spell_data = json_decode($spell_json)->jsonSpellData;
+$spell_data = json_decode($spell_json)->jsonSpellData;?>
 
-foreach ($spell_data as $spell) :
-	// var_dump($spell);
-?>
 
+<form action="generate-svg.php">
+	<select name="spell" id="spell">
+		<?php foreach ($spell_data as $key=>$spell) :
+			$name = $spell->name; ?>
+			<option value="<?php echo $key; ?>" <?php echo $selected_spell == $key ? 'selected' : ''; ?>><?php echo $name; ?></option>
+		<?php endforeach; ?>
+	</select>
+
+	<input type="submit">
+</form>
+
+<?php if ($selected_spell):
+	$spell = $spell_data[$selected_spell];
+
+
+	?>
 	<div class="spellcard">
 
 		<div class="spellcard__top">
 			<h1><?php echo $spell->name; ?></h1>
 			<h2><?php echo $spell->level.' '.$spell->school; ?><?php echo $spell->ritual == 'yes' ? ', Ritual' : ''; ?></h2>
-			<!-- <div class="top__level-bubble"><?php echo substr($spell->level, 0, 1); ?></div> -->
-
+			<h5><?php echo $spell->class; ?></h5>
 		</div>
 
 		<div class="spellcard__body">
@@ -37,6 +49,7 @@ foreach ($spell_data as $spell) :
 
 			<div class="spellcard__description">
 				<?php echo $spell->desc; ?>
+				<?php echo isset($spell->higher_level) ? $spell->higher_level : '' ; ?>
 			</div>
 
 		</div>
@@ -47,46 +60,10 @@ foreach ($spell_data as $spell) :
 
 		</div>
 
-		<?php //echo $spell->class; ?>
-
-
 	</div>
+<?php endif ?>
 
 
-<?php endforeach; ?>
 
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-
-	var fitCard = function(card, buffer=0) {
-		var card_height = card.outerHeight();
-		var top_height = card.find('.spellcard__top').outerHeight();
-		var bottom_height = card.find('.spellcard__bottom').outerHeight();
-
-		var description_height = card.find('.spellcard__description').outerHeight() + buffer;
-		var description_offset = card.find('.spellcard__description').position().top;
-		var available_height = card_height - (top_height + bottom_height) - description_offset;
-
-		if (description_height > available_height) {
-			buffer = 30;
-			card.addClass('truncated');
-			card.find('.spellcard__count').text('1/1');
-
-			// @todo currently destroys formatting. fixy fix?
-			var spellDesc = card.find('.spellcard__description').text();
-			card.find('.spellcard__description').text(spellDesc.substring(0,spellDesc.length-4) + '...');
-			fitCard(card, buffer);
-		};
-	}
-
-	$('.spellcard:nth-child(1)').each(function(){
-		fitCard($(this));
-	});
-
-});
-
-</script>
 
 </html>
