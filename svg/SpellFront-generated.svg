@@ -1,0 +1,117 @@
+<svg id="spell-card" xmlns="http://www.w3.org/2000/svg" width="450" height="270" viewBox="0 0 450 270">
+
+
+    <!-- ==================================================================== -->
+    <!-- CARD BACKGROUND BITS -->
+    <!-- ==================================================================== -->
+    <g id="card_structure">
+      <rect id="structure__background--black" style="fill:#000000;" width="450" height="270" x="0" y="0"></rect>
+      <rect id="structure__background--color" style="fill:#d89f11;" width="430" height="250" x="10" y="10"></rect>
+      <path id="structure__background--white-top" style="fill:#ffffff" d="m 17.330353,16 414.241067,0 c 0,0 4,5.88108 4,18.92857 0,13.04749 -4,18.92857 -4,18.92857 l -414.241067,0 c 0,0 -3.33035,-7.58392 -3.33035,-18.92857 C 14.000003,23.58392 17.330353,16 17.330353,16 z"></path>
+      <path id="structure__background--white-main" style="fill:#ffffff;" d="M 18.000003,56 432,56 l 0,196.00002 -413.999997,0 z"></path>
+    </g>
+
+
+    <!-- ==================================================================== -->
+    <!-- PLAYER HANDBOOK NUMBER -->
+    <!-- ==================================================================== -->
+    <text id="phb-page" x="405" y="267.3" style="font-size:7px;fill:#ffffff;font-family:Lato;">
+      phb 213</text>
+
+
+    <!-- ==================================================================== -->
+    <!-- TOP BAR -->
+    <!-- ==================================================================== -->
+    <text id="spell_name" x="25.460144" y="36.396687" style="font-size:18.85394669px;font-family:Arsenal;">
+      Antimagic Field</text>
+
+    <text id="spell_type" x="25.460144" y="48.94788" style="font-size:10px;font-style:italic;font-family:Lato;">
+       Abjuration</text>
+
+    <g id="level-indicator" transform="matrix(0.37775189,0,0,0.37775189,397.34927,16.44961)">
+      <g id="level-indicator__background" transform="translate(0,-952.36216)" style="fill:#d89f11;fill-opacity:1">
+        <path id="path4646-1-1" d="m 49.999999,957.36216 -38.971335,22.4997 0,45.00064 1.290604,0.7457 37.680731,21.754 38.971337,-22.4997 0,-45.00064 z"></path>
+      </g>
+      <text id="level-indicator__level" x="49" y="72" font-family="Arsenal" font-size="65px" style="font-weight:bold;text-align:center;text-anchor:middle;fill:#ffffff;">
+          8        </text>
+    </g>
+
+
+    <!-- ==================================================================== -->
+    <!-- SPELL DETAILS -->
+    <!-- ==================================================================== -->
+    <g id="spell-details" style="font-size:9px;font-family:Lato;fill:000000;">
+
+      <svg class="icon" x="25" y="66" width="12px" height="12px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-range"></use></svg>
+      <foreignObject id="spell_range" xml:space="xhtml:p" width="159" height="0" x="43" y="66">
+        Self      </foreignObject>
+      <path class="spacer" style="fill:#d89f11;" d="m 16.428573,84 179.642847,1.4285 -179.642847,1.4286 z"></path>
+
+      <svg class="icon" x="25" y="93" width="12px" height="12px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cast-time"></use></svg>
+      <foreignObject id="spell_cast-time" xml:space="xhtml:p" width="159" height="0" x="43" y="93">
+        1 action      </foreignObject>
+      <path class="spacer" style="fill:#d89f11;" d="m 16.428573,111 179.642847,1.4285 -179.642847,1.4286 z"></path>
+
+      <svg class="icon" x="25" y="120" width="12px" height="12px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-duration"></use></svg>
+      <foreignObject id="spell_duration" xml:space="xhtml:p" width="159" height="0" x="43" y="120">
+        Up to 1 hour, Concentration      </foreignObject>
+      <path class="spacer" style="fill:#d89f11;" d="m 16.428573,138 179.642847,1.4285 -179.642847,1.4286 z"></path>
+
+      <svg class="icon" x="25" y="147" width="12px" height="12px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-requirements"></use></svg>
+      <foreignObject id="spell_requirements" xml:space="xhtml:p" width="159" height="0" x="43" y="147">
+        Visual, Speech, Material      </foreignObject>
+
+              <path class="spacer" style="fill:#d89f11;" d="m 16.428573,165 179.642847,1.4285 -179.642847,1.4286 z"></path>
+        <svg class="icon" x="25" y="174" width="12px" height="12px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-materials"></use></svg>
+        <foreignObject id="spell_materials" xml:space="xhtml:p" width="159" height="0" x="43" y="174">
+          A pinch of powdered iron or iron filings.        </foreignObject>
+
+          </g>
+
+
+    <!-- ==================================================================== -->
+    <!-- SPELL DESCRIPTION -->
+    <!-- ==================================================================== -->
+    <foreignObject id="spell-description" xml:space="xhtml:p" width="210" height="176" x="212" y="66" style="font-size:11px;font-family:Lato;fill:000000;overflow:hidden;">
+      <p>A 10-foot-radius invisible sphere of antimagic surrounds you. This area is divorced from the magical energy that suffuses the multiverse. Within the sphere, spells can't be cast, summoned creatures disappear, and even magic items become mundane. Until the spell ends, the sphere moves with you, centered on you.</p><p>Spells and other magical effects, except those created by an artifact or a deity, are suppressed in the sphere and can't protrude into it. A slot expended to cast a suppressed spell is consumed. While an effect is suppressed, it doesn't function, but the time it spends suppressed counts against its duration.</p><p>Targeted Effects. Spells and other magical effects, such as magic missile and charm person, that target a creature or an object in the sphere have no effect on that target.</p><p>Areas of Magic. The area of another spell or magical effect, such as fireball, can't extend into the sphere. If the sphere overlaps an area of magic, the part of the area that is covered by the sphere is suppressed. For example, the flames created by a wall of fire are suppressed within the sphere, creating a gap in the wall if the overlap is large enough.</p><p>Spells. Any active spell or other magical effect on a creature or an object in the sphere is suppressed while the creature or object is in it.</p><p>Magic Items. The properties and powers of magic items are suppressed in the sphere. For example, a +1 longsword in the sphere functions as a nonmagical longsword.</p><p>A magic weapon's properties and powers are suppressed if it is used against a target in the sphere or wielded by an attacker in the sphere. If a magic weapon or a piece of magic ammunition fully leaves the sphere (for example, if you fire a magic arrow or throw a magic spear at a target outside the sphere), the magic of the item ceases to be suppressed as soon as it exits.</p><p>Magical Travel. Teleportation and planar travel fail to work in the sphere, whether the sphere is the destination or the departure point for such magical travel. A portal to another location, world, or plane of existence, as well as an opening to an extradimensional space such as that created by the rope trick spell, temporarily closes while in the sphere.</p><p>Creatures and Objects. A creature or object summoned or created by magic temporarily winks out of existence in the sphere. Such a creature instantly reappears once the space the creature occupied is no longer within the sphere.</p><p>Dispel Magic. Spells and magical effects such as dispel magic have no effect on the sphere. Likewise, the spheres created by different antimagic field spells don't nullify each other.</p>    </foreignObject>
+    <flowRoot>
+      <flowRegion><rect id="spell-description__bound" width="210" height="176" x="212" y="66" fill="#ffffff"></rect></flowRegion>
+      <flowPara>A 10-foot-radius invisible sphere of antimagic surrounds you. This area is divorced from the magical energy that suffuses the multiverse. Within the sphere, spells can't be cast, summoned creatures disappear, and even magic items become mundane. Until the spell ends, the sphere moves with you, centered on you.</flowPara><flowPara>Spells and other magical effects, except those created by an artifact or a deity, are suppressed in the sphere and can't protrude into it. A slot expended to cast a suppressed spell is consumed. While an effect is suppressed, it doesn't function, but the time it spends suppressed counts against its duration.</flowPara><flowPara>Targeted Effects. Spells and other magical effects, such as magic missile and charm person, that target a creature or an object in the sphere have no effect on that target.</flowPara><flowPara>Areas of Magic. The area of another spell or magical effect, such as fireball, can't extend into the sphere. If the sphere overlaps an area of magic, the part of the area that is covered by the sphere is suppressed. For example, the flames created by a wall of fire are suppressed within the sphere, creating a gap in the wall if the overlap is large enough.</flowPara><flowPara>Spells. Any active spell or other magical effect on a creature or an object in the sphere is suppressed while the creature or object is in it.</flowPara><flowPara>Magic Items. The properties and powers of magic items are suppressed in the sphere. For example, a +1 longsword in the sphere functions as a nonmagical longsword.</flowPara><flowPara>A magic weapon's properties and powers are suppressed if it is used against a target in the sphere or wielded by an attacker in the sphere. If a magic weapon or a piece of magic ammunition fully leaves the sphere (for example, if you fire a magic arrow or throw a magic spear at a target outside the sphere), the magic of the item ceases to be suppressed as soon as it exits.</flowPara><flowPara>Magical Travel. Teleportation and planar travel fail to work in the sphere, whether the sphere is the destination or the departure point for such magical travel. A portal to another location, world, or plane of existence, as well as an opening to an extradimensional space such as that created by the rope trick spell, temporarily closes while in the sphere.</flowPara><flowPara>Creatures and Objects. A creature or object summoned or created by magic temporarily winks out of existence in the sphere. Such a creature instantly reappears once the space the creature occupied is no longer within the sphere.</flowPara><flowPara>Dispel Magic. Spells and magical effects such as dispel magic have no effect on the sphere. Likewise, the spheres created by different antimagic field spells don't nullify each other.</flowPara>    </flowRoot>
+
+
+    <!-- ==================================================================== -->
+    <!-- ICON SYMBOLS -->
+    <!-- ==================================================================== -->
+ <defs>
+      <symbol id="icon-range" viewBox="0 0 22 28">
+      <path d="M22 24c0 2.75-5.703 4-11 4s-11-1.25-11-4c0-2.125 3.172-3.125 5.828-3.578 0.547-0.094 1.062 0.266 1.156 0.812s-0.266 1.062-0.812 1.156c-3.219 0.562-4.125 1.437-4.172 1.625 0.156 0.531 3.156 1.984 9 1.984s8.844-1.453 9-2.016c-0.047-0.156-0.953-1.031-4.172-1.594-0.547-0.094-0.906-0.609-0.812-1.156s0.609-0.906 1.156-0.812c2.656 0.453 5.828 1.453 5.828 3.578zM16 10v6c0 0.547-0.453 1-1 1h-1v6c0 0.547-0.453 1-1 1h-4c-0.547 0-1-0.453-1-1v-6h-1c-0.547 0-1-0.453-1-1v-6c0-1.109 0.891-2 2-2h6c1.109 0 2 0.891 2 2zM14.5 4c0 1.937-1.563 3.5-3.5 3.5s-3.5-1.563-3.5-3.5 1.563-3.5 3.5-3.5 3.5 1.563 3.5 3.5z"></path>
+      </symbol>
+
+      <symbol id="icon-cast-time-alt" viewBox="0 0 24 24">
+      <path d="M6.984 2.016h10.031l-4.031 7.969h4.031l-7.031 12v-9h-3v-10.969z"></path>
+      </symbol>
+      <symbol id="icon-cast-time" viewBox="0 0 14 28">
+      <path d="M13.828 8.844c0.172 0.187 0.219 0.453 0.109 0.688l-8.437 18.078c-0.125 0.234-0.375 0.391-0.656 0.391-0.063 0-0.141-0.016-0.219-0.031-0.344-0.109-0.547-0.438-0.469-0.766l3.078-12.625-6.344 1.578c-0.063 0.016-0.125 0.016-0.187 0.016-0.172 0-0.359-0.063-0.484-0.172-0.187-0.156-0.25-0.391-0.203-0.609l3.141-12.891c0.078-0.297 0.359-0.5 0.688-0.5h5.125c0.391 0 0.703 0.297 0.703 0.656 0 0.094-0.031 0.187-0.078 0.281l-2.672 7.234 6.188-1.531c0.063-0.016 0.125-0.031 0.187-0.031 0.203 0 0.391 0.094 0.531 0.234z"></path>
+      </symbol>
+
+      <symbol id="icon-duration" viewBox="0 0 24 24">
+      <path d="M12.516 8.016v4.219l3.469 2.109-0.703 1.219-4.266-2.578v-4.969h1.5zM21 10.125h-6.797l2.766-2.813c-2.719-2.719-7.172-2.813-9.891-0.094s-2.719 7.031 0 9.75 7.172 2.719 9.891 0c1.359-1.359 2.016-2.906 2.016-4.875h2.016c0 1.969-0.844 4.547-2.625 6.281-3.516 3.469-9.234 3.469-12.75 0s-3.516-9.094 0-12.563 9.141-3.469 12.656 0l2.719-2.813v7.125z"></path>
+      </symbol>
+
+      <symbol id="icon-requirements" viewBox="0 0 26 28">
+      <path d="M18.594 9.078l4.578-4.578-1.672-1.672-4.578 4.578zM25.578 4.5c0 0.266-0.094 0.516-0.281 0.703l-20.094 20.094c-0.187 0.187-0.438 0.281-0.703 0.281s-0.516-0.094-0.703-0.281l-3.094-3.094c-0.187-0.187-0.281-0.438-0.281-0.703s0.094-0.516 0.281-0.703l20.094-20.094c0.187-0.187 0.438-0.281 0.703-0.281s0.516 0.094 0.703 0.281l3.094 3.094c0.187 0.187 0.281 0.438 0.281 0.703zM4.469 1.531l1.531 0.469-1.531 0.469-0.469 1.531-0.469-1.531-1.531-0.469 1.531-0.469 0.469-1.531zM9.938 4.062l3.063 0.938-3.063 0.938-0.938 3.063-0.938-3.063-3.063-0.938 3.063-0.938 0.938-3.063zM24.469 11.531l1.531 0.469-1.531 0.469-0.469 1.531-0.469-1.531-1.531-0.469 1.531-0.469 0.469-1.531zM14.469 1.531l1.531 0.469-1.531 0.469-0.469 1.531-0.469-1.531-1.531-0.469 1.531-0.469 0.469-1.531z"></path>
+      </symbol>
+
+      <symbol id="icon-materials" viewBox="0 0 32 28">
+      <path d="M3.313 12l9.734 10.391-4.688-10.391h-5.047zM16 24.063l5.453-12.063h-10.906zM8.406 10l3.187-6h-4.094l-4.5 6h5.406zM18.953 22.391l9.734-10.391h-5.047zM10.672 10h10.656l-3.187-6h-4.281zM23.594 10h5.406l-4.5-6h-4.094zM25.797 2.406l6 8c0.297 0.375 0.266 0.922-0.063 1.281l-15 16c-0.187 0.203-0.453 0.313-0.734 0.313s-0.547-0.109-0.734-0.313l-15-16c-0.328-0.359-0.359-0.906-0.063-1.281l6-8c0.187-0.266 0.484-0.406 0.797-0.406h18c0.313 0 0.609 0.141 0.797 0.406z"></path>
+      </symbol>
+
+      <symbol id="icon-dice-alt" viewBox="0 0 24 24">
+      <path d="M12.984 12.984v-6h-1.969v6h1.969zM12.984 17.016v-2.016h-1.969v2.016h1.969zM23.016 12l-2.438 2.766 0.328 3.703-3.609 0.797-1.875 3.188-3.422-1.453-3.422 1.453-1.875-3.141-3.609-0.844 0.328-3.703-2.438-2.766 2.438-2.813-0.328-3.656 3.609-0.797 1.875-3.188 3.422 1.453 3.422-1.453 1.875 3.188 3.609 0.797-0.328 3.703z"></path>
+      </symbol>
+      <symbol id="icon-dice" viewBox="0 0 31 32">
+      <path d="M15.297 0l-13.856 8v16l13.856 8 13.856-8v-16l-13.856-8zM15.297 2.7l5.535 8.187h-11.069l5.535-8.187zM12.301 3.851l-4.551 6.731-3.554-2.052 8.105-4.68zM18.293 3.851l8.104 4.679-3.554 2.052-4.551-6.731zM3.278 10.121l3.555 2.052-3.555 7.307v-9.359zM27.316 10.121v9.36l-3.555-7.308 3.554-2.052zM9.624 12.724h11.346l-5.673 9.826-5.673-9.826zM8.102 13.763l5.535 9.586-9.857-0.7 4.322-8.886zM22.492 13.763l4.322 8.886-9.857 0.7 5.534-9.586zM6.272 24.668l8.106 0.576v4.104l-8.106-4.68zM24.322 24.668l-8.106 4.68v-4.104l8.106-0.576z"></path>
+      </symbol>
+    </defs>
+
+  </svg>
