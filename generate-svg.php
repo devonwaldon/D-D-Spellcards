@@ -5,6 +5,7 @@ $spell_data = json_decode($spell_json)->jsonSpellData;
 
 if (array_key_exists('spell', $_GET)) {
   $spell = $spell_data[$_GET['spell']];
+  $original_spell = array_key_exists('spell', $_GET) ? $_GET['spell'] : '';
 
   $spell_name = $spell->name;
 
@@ -41,6 +42,7 @@ if (array_key_exists('spell', $_GET)) {
   $card_class = $card_class_options[0];
 
 } else {
+  $original_spell = array_key_exists('original_spell', $_GET) ? $_GET['original_spell'] : '';
   $spell_name = array_key_exists('spell_name', $_GET) ? $_GET['spell_name'] : 'Spell Name';
   $spell_type = array_key_exists('spell_type', $_GET) ? $_GET['spell_type'] : 'Spell Type';
   $spell_level = array_key_exists('spell_level', $_GET) ? $_GET['spell_level'] : '0';
@@ -392,7 +394,14 @@ $card_color = $card_colors[$card_class];
 
     </select>
 
+    <input type="hidden" name="original_spell" value="<?php echo $original_spell; ?>">
+
     <input type="submit" value="Customize">
+  </form>
+
+  <form action="">
+    <input type="hidden" name="spell" value="<?php echo $original_spell; ?>">
+    <input type="submit" value="Reset">
   </form>
 
 
@@ -400,7 +409,10 @@ $card_color = $card_colors[$card_class];
   <script>
 
   $(document).ready(function(){
-    var svg_html = $('svg')[0].outerHTML.replace('flowroot>','flowRoot>').replace('flowregion>','flowRegion>').replace('flowpara>','flowPara>');
+    var svg_html = $('svg')[0].outerHTML
+                    .replace('flowroot>','flowRoot>')
+                    .replace('flowregion>','flowRegion>')
+                    .replace('flowpara>','flowPara>');
     $('body').append(
       $('<a>')
         .attr('href-lang', 'image/svg+xml')

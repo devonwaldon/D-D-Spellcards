@@ -105,7 +105,7 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.7940591"
+     inkscape:zoom="0.89702955"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
      showgrid="false"
@@ -115,8 +115,8 @@
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      showborder="true"
-     inkscape:cx="68.866375"
-     inkscape:cy="884.05894"
+     inkscape:cx="409.46948"
+     inkscape:cy="1037.4423"
      inkscape:window-width="1366"
      inkscape:window-height="705" />
   <metadata
@@ -201,7 +201,9 @@
            y="259.50504"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11px;font-family:Lato;-inkscape-font-specification:Lato" /></flowRegion><flowPara
          id="flowPara4001-7-5"
-         style="font-size:11px;line-height:1.25">You assume a different form. When you cast the spell, choose one of the following options, the effects of which last for the duration of the spell. While the spell lasts, you can end one option as an action to gain the benefits of a different one.</flowPara><flowPara
+         style="font-size:11px;line-height:1.25">You assume a <flowSpan
+   style="font-weight:bold"
+   id="flowSpan91">different form. </flowSpan>When you cast the spell, choose one of the following options, the effects of which last for the duration of the spell. While the spell lasts, you can end one option as an action to gain the benefits of a different one.</flowPara><flowPara
          id="flowPara4474-9"
          style="font-size:11px;line-height:1.25"> </flowPara><flowPara
          id="flowPara4476-8"
