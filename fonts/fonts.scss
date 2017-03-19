@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?nbntx8');
+  src:  url('fonts/icomoon.eot?nbntx8#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?nbntx8') format('truetype'),
+    url('fonts/icomoon.woff?nbntx8') format('woff'),
+    url('fonts/icomoon.svg?nbntx8#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-noun_763027_cc:before {
+  content: "\e900";
+}
+.icon-av_timer:before {
+  content: "\e01b";
+}
+.icon-close:before {
+  content: "\e5cd";
+}
+.icon-done:before {
+  content: "\e876";
+}
+.icon-expand_more:before {
+  content: "\e5cf";
+}
+.icon-flash_on:before {
+  content: "\e3e7";
+}
+.icon-my_location:before {
+  content: "\e55c";
+}
+.icon-new_releases:before {
+  content: "\e031";
+}
+.icon-track_changes:before {
+  content: "\e8e1";
+}
+.icon-update:before {
+  content: "\e923";
+}
+.icon-magic:before {
+  content: "\f0d0";
+}
+.icon-bolt:before {
+  content: "\f0e7";
+}
+.icon-flash:before {
+  content: "\f0e7";
+}
+.icon-bullseye:before {
+  content: "\f140";
+}
+.icon-diamond:before {
+  content: "\f219";
+}
+.icon-street-view:before {
+  content: "\f21d";
+}
+

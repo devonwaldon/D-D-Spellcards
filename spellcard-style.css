@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Arsenal:400,400i,700,700i|Lato:400,400i,700,900');
+
+
+body {
+	margin: 0;
+}
+p {
+	font-family: inherit;
+	font-size: inherit;
+	margin: 0 0 10px;
+}
+input,
+textarea,
+select {
+	display: block;
+	width: auto;
+	margin-bottom: 1rem;
+}
+textarea {
+	width: 500px;
+	max-width: 100%;
+}
+label {
+	font-weight: bold;
+	font-size: 0.8rem;
+	margin-bottom: 0.5rem;
+}
+.svg-wrapper {
+	position: relative;
+}
+div#spell-description {
+	position: absolute;
+	width: 210px;
+	height: 176px;
+	left: 212px;
+	top: 66px;
+	font-size: 11px;
+	font-family: Lato;
+	color: #000000;
+	overflow: hidden;
+	/*background-color: green;*/
+}
+div#spell-details {
+	position: absolute;
+	width: 157px;
+	height: 176px;
+	left: 45px;
+	top: 66px;
+	font-size: 9px;
+	font-family: Lato;
+	color: #000000;
+	/*background-color: red;*/
+}
+div#spell-details .spell-meta {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	margin: 8px 0;
+}
+div#spell-details .spell-meta:first-child {
+	margin-top: 0;
+}
+div#spell-details .spell-meta:last-child {
+	margin-bottom: 0;
+}
+div#spell-details svg.icon {
+	position: absolute;
+	top: 0px;
+	left: -20px;
+}
+div#spell-details .spell-meta--cast-time svg.icon {
+	left: -18.5px;
+}
+div#spell-details .spell-meta--duration svg.icon {
+	left: -21.5px;
+}
+div#spell-details .spell-meta--materials svg.icon {
+	left: -26px;
+	top: 0.5px;
+}
+
+div#spell-details svg.spacer {
+	position: absolute;
+	bottom: -9.5px;
+	left: -28px;
+	height: 3px;
+}

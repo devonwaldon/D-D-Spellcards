@@ -1,0 +1,266 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Alegreya+SC:400,700|Alegreya+Sans+SC|Open+Sans:400,400i,700,700i');
+@import 'fonts/fonts';
+
+// VARIABLES
+$teal: #226666;
+$teal: #008080;
+$orange: #ff9955;
+$red: #de1818;
+$light-grey: #808080;
+
+
+// BASE STYLING
+body {
+	background-color: black;
+	color: white;
+	font-family: 'Open Sans';
+	padding: 15rem 0 10rem;
+}
+a {
+	transition: all 0.2s ease-in-out;
+	color: $teal;
+	text-decoration: none!important;
+	&:hover {
+		color: darken($teal, 10%);
+	}
+}
+.btn {
+	transition: all 0.2s ease-in-out;
+	text-align: center;
+	min-width: 20rem;
+	font-family: 'Alegreya Sans SC';
+	font-size: 19.5;
+	color: white;
+	background-color: $teal;
+	border: none;
+	border-radius: 0;
+	margin: 0 1.5rem;
+	padding: 0.4rem 2.4rem;
+	&:first-child {
+		margin-left: 0;
+	}
+	&:last-child {
+		margin-right: 0;
+	}
+	&:hover,
+	&:focus {
+		color: white;
+		background-color: darken($teal, 10%);
+	}
+	&:active {
+		color: white;
+	}
+
+	&.ghost {
+		color: $teal;
+		background-color: transparent;
+		border: 2px solid $teal;
+		&:hover,
+		&:focus {
+			color: darken($teal, 10%);
+			border-color: darken($teal, 10%);
+			background-color: transparent;
+		}
+	}
+}
+p {
+	margin-bottom: 2rem;
+}
+p+p.small {
+	margin-top: -1.5rem;
+}
+h1 {
+	color: $teal;
+	font-family: 'Alegreya SC';
+	font-size: 6rem;
+}
+img {
+	max-width: 100%;
+	height: auto
+}
+
+// FORM FIELDS
+form > :last-child {
+	margin-bottom: 0;
+}
+label {
+	font-family: 'Alegreya SC';
+	font-size: 1.2rem;
+	font-weight: bold;
+	display: block;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	.required {
+		color: $red;
+	}
+}
+fieldset {
+	margin-bottom: 2rem;
+}
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+	   -moz-appearance: none;
+	-webkit-appearance: none;
+	border: 2px solid black;
+	padding: .5rem 2rem .5rem .7rem;
+	width: 100%;
+	margin-bottom: 2rem;
+}
+textarea {
+	resize: vertical;
+}
+.file-wrapper {
+	position: relative;
+}
+input[type="file"] {
+	width: 1px;
+	height: 1px;
+	opacity: 0;
+	left: 0;
+	bottom: 0;
+	position: absolute;
+	&+label {
+		margin: 0 0 2rem 0;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+input[type="checkbox"] {
+	visibility: hidden;
+	position: absolute;
+	&+label {
+		font-family: 'Open Sans';
+		font-size: 1.6rem;
+		font-weight: normal;
+		padding-left: 2.5rem;
+		position: relative;
+		&:before {
+			content: '';
+			width: 1.6rem;
+			height: 1.6rem;
+			border: 2px solid black;
+			position: absolute;
+			top: 3px;
+			left: 0;
+		}
+	}
+	&:checked+label:after {
+		font-family: 'icomoon';
+		content: '\e876';
+		font-weight: 900;
+		position: absolute;
+		left: 0px;
+		top: -5px;
+		font-size: 2rem;
+		color: $teal;
+	}
+}
+.select-wrapper {
+	select {
+		margin-bottom: 0;
+	}
+	position: relative;
+	margin-bottom: 2rem;
+	&:after {
+		position: absolute;
+		font-family: 'icomoon';
+		content: '\e5cf';
+		font-weight: 500;
+		position: absolute;
+		right: 0.5rem;
+		top: 0px;
+		font-size: 27px;
+		pointer-events: none;
+	}
+}
+.form-actions {
+	margin: 5rem 0;
+}
+
+// CUSTOM ELEMENTS
+.small {
+	font-size: 66%;
+	color: $light-grey;
+	margin-bottom: 1rem;
+}
+
+.background-image {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center center;
+	opacity: 0.2;
+}
+
+.dice {
+	width: 30rem;
+	max-width: 100%;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%,-70%);
+}
+.title {
+	text-align: center;
+	display: block;
+	width: 100%;
+	h1 {
+		margin: 0;
+		line-height: 0.7;
+		transform: translateY(25%);
+		z-index: 10;
+		position: relative;
+	}
+	@media screen and (min-width: 992px) {
+		padding: 0 8%;
+	}
+}
+
+.content-wrapper {
+	background-color: white;
+	color: black;
+	padding: 8rem 8rem 12rem;
+	font-size: 1.6rem;
+	box-shadow: rgba($orange, 0.2) 0 0 12rem 0;
+	position: relative;
+	z-index: 5;
+}
+
+.modal.fade {
+	transition: opacity .1s linear;
+	.modal-dialog {
+		transition: transform .2s ease-out;
+	}
+}
+.modal-content {
+	color: black;
+	font-size: 1.6rem;
+	border-radius: 0;
+	.close {
+		opacity: 1;
+		margin-top: 6px;
+	}
+	.modal-title {
+		color: $teal;
+		font-size: 2.8rem;
+		font-family: 'Alegreya SC';
+	}
+	.modal-header,
+	.modal-body,
+	.modal-footer {
+		padding: 2rem 3rem;
+		border: none;
+	}
+	.modal-footer {
+		text-align: left;
+		padding-bottom: 3rem;
+	}
+}

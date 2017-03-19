@@ -1,0 +1,18 @@
+WHAT I WANT TO DO
+
+- Generate a card based on pre-existing definitions
+- Generate a card based on custom definitions
+- Customize cards
+- See a preview of my card
+- Print a single card
+- Print a set of cards
+- Choose cards to print
+
+
+
+V2
+
+- Save cards for later
+- Share a set of cards with others
+- Load a set of cards from a save-file
+
